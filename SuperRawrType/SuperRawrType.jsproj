@@ -288,6 +288,7 @@
     <Content Include="media\TransTextBG.png" />
     <None Include="Package.StoreAssociation.xml" />
     <None Include="SuperRawrType_StoreKey.pfx" />
+    <Content Include="privacy.html" />
     <Content Include="weltmeister.html" />
     <None Include="SuperRawrType_TemporaryKey.pfx" />
   </ItemGroup>

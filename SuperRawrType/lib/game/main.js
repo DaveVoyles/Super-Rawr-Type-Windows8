@@ -22,7 +22,7 @@ ig.module(
     'game.screens.start-screen',
     'game.screens.select-screen',
     'impact.sound',
-    'bootstrap.platforms.win8',
+    'bootstrap.platforms.win8', // Launch Win8 specific code
     'game.packed-textures',
     'plugins.tween-lite',
     'game.entities.BulletGenerator',
@@ -34,6 +34,13 @@ ig.module(
 
     )
     .defines(function () {
+
+        ig.System.inject({
+            setGameNow: function (gameClass, startLevel) {
+                ig.game = new (gameClass)(startLevel);
+                ig.system.setDelegate(ig.game);
+            },
+        });
 
         MyGame = ig.Game.extend({
 
@@ -286,21 +293,22 @@ ig.module(
 
 
         /*******************************************
-        * Default Setting
+        *Launch the game
         *******************************************/
-
         ig.startNewGame = function (width, height) {
-              if (ig.ua.mobile) {
+            if (ig.ua.mobile) {
             //Disable sound for all mobile devices
             ig.Sound.enabled = false;
-              }
+            }
 
             ig.main('#canvas', StartScreen, 60, 480, 320, 1);
 
+            // handle window resizing for Win8
             if (window.resizeGame)
                 window.resizeGame();
         };
 
+        // Unsure of screen size? just use 480 x 320
         if (typeof (WinJS) == 'undefined') {
             ig.startNewGame(480, 320);
         }
