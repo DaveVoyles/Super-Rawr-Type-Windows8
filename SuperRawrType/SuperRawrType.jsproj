@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>984ee7c7-69c6-47b4-a14a-fc941c5d9353</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>SuperRawrType_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>C:\Users\dvoyle200\Desktop\</AppxPackageDir>
+    <PackageCertificateThumbprint>0C6638095873094CA03488CA7D224C4640115B4A</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\snap-view.css" />
+    <Content Include="default.html" />
+    <Content Include="css\default.css" />
+    <Content Include="images\InstructionsScreen 620x300.png" />
+    <Content Include="images\InstructionsScreen 868x420.png" />
+    <Content Include="images\Loading Screen.png" />
+    <Content Include="images\Loading Screen120x120.png" />
+    <Content Include="images\Loading Screen150x150.png" />
+    <Content Include="images\Loading Screen210x210.png" />
+    <Content Include="images\Loading Screen270x270.png" />
+    <Content Include="images\logo.scale-100.png" />
+    <Content Include="images\logo.scale-140.png" />
+    <Content Include="images\logo.scale-180.png" />
+    <Content Include="images\logo.scale-80.png" />
+    <Content Include="images\Small logo 30x30.png" />
+    <Content Include="images\smalllogo.scale-100.png" />
+    <Content Include="images\Splash Screen 868x420.png" />
+    <Content Include="images\Splash Scren 620x300.png" />
+    <Content Include="images\splashscreen.scale-100.png" />
+    <Content Include="images\splashscreen.scale-140.png" />
+    <Content Include="images\Store logo 90x90.png" />
+    <Content Include="images\storelogo.scale-180.png" />
+    <Content Include="images\WideLogo.scale-180.png" />
+    <Content Include="js\default.js" />
+    <Content Include="js\resize-game.js" />
+    <Content Include="lib\bootstrap\entities\base-actor.js" />
+    <Content Include="lib\bootstrap\entities\base-chachki.js" />
+    <Content Include="lib\bootstrap\entities\base-door.js" />
+    <Content Include="lib\bootstrap\entities\base-exit.js" />
+    <Content Include="lib\bootstrap\entities\base-item.js" />
+    <Content Include="lib\bootstrap\entities\base-monster.js" />
+    <Content Include="lib\bootstrap\entities\base-powerup.js" />
+    <Content Include="lib\bootstrap\entities\base-spike.js" />
+    <Content Include="lib\bootstrap\entities\base-switch.js" />
+    <Content Include="lib\bootstrap\entities\death-explosion.js" />
+    <Content Include="lib\bootstrap\entities\particle-emitter.js" />
+    <Content Include="lib\bootstrap\platforms\win8.js" />
+    <Content Include="lib\bootstrap\plugins\camera.js" />
+    <Content Include="lib\bootstrap\plugins\hit-area.js" />
+    <Content Include="lib\bootstrap\plugins\impact-storage.js" />
+    <Content Include="lib\bootstrap\plugins\menu.js" />
+    <Content Include="lib\bootstrap\plugins\pause.js" />
+    <Content Include="lib\bootstrap\plugins\sound-effects.js" />
+    <Content Include="lib\bootstrap\plugins\texture-atlas.js" />
+    <Content Include="lib\bootstrap\plugins\touch-joystick.js" />
+    <Content Include="lib\bootstrap\plugins\utils.js" />
+    <Content Include="lib\bootstrap\plugins\weltmeister\random-map-button.js" />
+    <Content Include="lib\bootstrap\plugins\weltmeister\rot.js" />
+    <Content Include="lib\game\entities\base-actor.js" />
+    <Content Include="lib\game\entities\base-exit.js" />
+    <Content Include="lib\game\entities\BaseWeapon.js" />
+    <Content Include="lib\game\entities\bullet.js" />
+    <Content Include="lib\game\entities\BulletGenerator.js" />
+    <Content Include="lib\game\entities\death-explosion.js" />
+    <Content Include="lib\game\entities\EnemyBullet01.js" />
+    <Content Include="lib\game\entities\EnemyBullet01Generator.js" />
+    <Content Include="lib\game\entities\EnemyBullet02.js" />
+    <Content Include="lib\game\entities\EnemyBullet02Generator.js" />
+    <Content Include="lib\game\entities\EnemyKamikaze.js" />
+    <Content Include="lib\game\entities\EnemyKamikazeCompanion.js" />
+    <Content Include="lib\game\entities\enemyOrb.js" />
+    <Content Include="lib\game\entities\enemyShip01.js" />
+    <Content Include="lib\game\entities\EnemySpawner.js" />
+    <Content Include="lib\game\entities\EnemySpinningShip.js" />
+    <Content Include="lib\game\entities\explosiveBomb.js" />
+    <Content Include="lib\game\entities\grenade.js" />
+    <Content Include="lib\game\entities\MiniShip.js" />
+    <Content Include="lib\game\entities\particle.js" />
+    <Content Include="lib\game\entities\PickupBulletTime.js" />
+    <Content Include="lib\game\entities\PickupMiniShip.js" />
+    <Content Include="lib\game\entities\player.js" />
+    <Content Include="lib\game\entities\RedBullet.js" />
+    <Content Include="lib\game\entities\SpinningShipBullet.js" />
+    <Content Include="lib\game\entities\SpinningShipBulletGenerator.js" />
+    <Content Include="lib\game\levels\Space1.js" />
+    <Content Include="lib\game\levels\Space2.js" />
+    <Content Include="lib\game\levels\Space3.js" />
+    <Content Include="lib\game\levels\Space4.js" />
+    <Content Include="lib\game\levels\test.js" />
+    <Content Include="lib\game\levels\untitled.js" />
+    <Content Include="lib\game\main.js" />
+    <Content Include="lib\game\packed-textures.js" />
+    <Content Include="lib\game\Screens\select-screen.js" />
+    <Content Include="lib\game\Screens\start-screen.js" />
+    <Content Include="lib\impact\animation.js" />
+    <Content Include="lib\impact\background-map.js" />
+    <Content Include="lib\impact\collision-map.js" />
+    <Content Include="lib\impact\debug\debug.css" />
+    <Content Include="lib\impact\debug\debug.js" />
+    <Content Include="lib\impact\debug\entities-panel.js" />
+    <Content Include="lib\impact\debug\graph-panel.js" />
+    <Content Include="lib\impact\debug\maps-panel.js" />
+    <Content Include="lib\impact\debug\menu.js" />
+    <Content Include="lib\impact\entity.js" />
+    <Content Include="lib\impact\font.js" />
+    <Content Include="lib\impact\game.js" />
+    <Content Include="lib\impact\image.js" />
+    <Content Include="lib\impact\impact.js" />
+    <Content Include="lib\impact\input.js" />
+    <Content Include="lib\impact\loader.js" />
+    <Content Include="lib\impact\map.js" />
+    <Content Include="lib\impact\sound.js" />
+    <Content Include="lib\impact\system.js" />
+    <Content Include="lib\impact\timer.js" />
+    <Content Include="lib\plugins\camera.js" />
+    <Content Include="lib\plugins\ease-pack.js" />
+    <Content Include="lib\plugins\hit-area.js" />
+    <Content Include="lib\plugins\imageblender.js" />
+    <Content Include="lib\plugins\parallax.js" />
+    <Content Include="lib\plugins\pause-focus.js" />
+    <Content Include="lib\plugins\StackBlur.js" />
+    <Content Include="lib\plugins\texture-atlas.js" />
+    <Content Include="lib\plugins\TimeSlower.js" />
+    <Content Include="lib\plugins\tween-lite.js" />
+    <Content Include="lib\weltmeister\api\browse.php" />
+    <Content Include="lib\weltmeister\api\config.php" />
+    <Content Include="lib\weltmeister\api\glob.php" />
+    <Content Include="lib\weltmeister\api\save.php" />
+    <Content Include="lib\weltmeister\arrow.png" />
+    <Content Include="lib\weltmeister\collisiontiles-64.png" />
+    <Content Include="lib\weltmeister\config.js" />
+    <Content Include="lib\weltmeister\edit-entities.js" />
+    <Content Include="lib\weltmeister\edit-map.js" />
+    <Content Include="lib\weltmeister\entities.js" />
+    <Content Include="lib\weltmeister\evented-input.js" />
+    <Content Include="lib\weltmeister\jquery-1.7.1.min.js" />
+    <Content Include="lib\weltmeister\jquery-ui-1.8.1.custom.min.js" />
+    <Content Include="lib\weltmeister\modal-dialogs.js" />
+    <Content Include="lib\weltmeister\select-file-dropdown.js" />
+    <Content Include="lib\weltmeister\tile-select.js" />
+    <Content Include="lib\weltmeister\undo.js" />
+    <Content Include="lib\weltmeister\weltmeister.css" />
+    <Content Include="lib\weltmeister\weltmeister.js" />
+    <Content Include="media\04b03.font.png" />
+    <Content Include="media\backdrop.png" />
+    <Content Include="media\BgObj\Piston.png" />
+    <Content Include="media\blood.png" />
+    <Content Include="media\BlueBullet.png" />
+    <Content Include="media\BlueBulletSheet.png" />
+    <Content Include="media\BlueBulletSheetSM.png" />
+    <Content Include="media\bullet.png" />
+    <Content Include="media\BulletSheet.png" />
+    <Content Include="media\BulletTimeDisplayBar1.png" />
+    <Content Include="media\BulletTimeOrb.png" />
+    <Content Include="media\Bullet_Neon.png" />
+    <Content Include="media\debris.png" />
+    <Content Include="media\Enemies\EnemyShipRocks.png" />
+    <Content Include="media\Enemies\EnemySpinningShip.png" />
+    <Content Include="media\EnemyOrb.png" />
+    <Content Include="media\EnemyOrb_copy.png" />
+    <Content Include="media\fire.png" />
+    <Content Include="media\grenade.png" />
+    <Content Include="media\grid.png" />
+    <Content Include="media\InsertCoin.png" />
+    <Content Include="media\Music\Staff Roll 1.mp3" />
+    <Content Include="media\Music\Staff Roll 1.ogg" />
+    <Content Include="media\Music\StaffRoll.mp3" />
+    <Content Include="media\Music\Stage 39.mp3" />
+    <Content Include="media\Music\Stage 39.ogg" />
+    <Content Include="media\Music\Stage 50.mp3" />
+    <Content Include="media\Music\Stage 50.ogg" />
+    <Content Include="media\particles.png" />
+    <Content Include="media\particlesBlur.png" />
+    <Content Include="media\PickupLevelUp.png" />
+    <Content Include="media\PickupMiniShip.png" />
+    <Content Include="media\PickupMiniShip01.png" />
+    <Content Include="media\RedBulletSheet.png" />
+    <Content Include="media\RedBulletSheetSM.png" />
+    <Content Include="media\scan-lines-dark.png" />
+    <Content Include="media\scan-lines.png" />
+    <Content Include="media\Screens\bgInstructionsScreen.png" />
+    <Content Include="media\Screens\EntryScreen.jpg" />
+    <Content Include="media\Screens\Scanline.png" />
+    <Content Include="media\Screens\StaffRoll.png" />
+    <Content Include="media\SFX\EndGame.mp3" />
+    <Content Include="media\SFX\EndGame.ogg" />
+    <Content Include="media\SFX\Explode01.mp3" />
+    <Content Include="media\SFX\Explode01.ogg" />
+    <Content Include="media\SFX\Explosion01.mp3" />
+    <Content Include="media\SFX\Explosion01.ogg" />
+    <Content Include="media\SFX\Grenade02.mp3" />
+    <Content Include="media\SFX\Grenade02.ogg" />
+    <Content Include="media\SFX\GrenadeExplosion.mp3" />
+    <Content Include="media\SFX\GrenadeExplosion.ogg" />
+    <Content Include="media\SFX\Hit01.mp3" />
+    <Content Include="media\SFX\Hit01.ogg" />
+    <Content Include="media\SFX\Hit03.mp3" />
+    <Content Include="media\SFX\Hit03.ogg" />
+    <Content Include="media\SFX\Laser01.mp3" />
+    <Content Include="media\SFX\Laser01.ogg" />
+    <Content Include="media\SFX\MenuSelect.mp3" />
+    <Content Include="media\SFX\MenuSelect.ogg" />
+    <Content Include="media\SFX\MiniShipKill.mp3" />
+    <Content Include="media\SFX\MiniShipKill.ogg" />
+    <Content Include="media\SFX\MiniShipSpawn.mp3" />
+    <Content Include="media\SFX\MiniShipSpawn.ogg" />
+    <Content Include="media\SFX\PickupBulletTime.mp3" />
+    <Content Include="media\SFX\PickupBulletTime.ogg" />
+    <Content Include="media\SFX\PickupLevelUp.mp3" />
+    <Content Include="media\SFX\PickupLevelUp.ogg" />
+    <Content Include="media\SFX\Powerup04.mp3" />
+    <Content Include="media\SFX\Powerup04.ogg" />
+    <Content Include="media\SFX\Respawn.mp3" />
+    <Content Include="media\SFX\Respawn.ogg" />
+    <Content Include="media\SFX\selection.mp3" />
+    <Content Include="media\SFX\selection.ogg" />
+    <Content Include="media\SFX\SlowMo01.mp3" />
+    <Content Include="media\SFX\SlowMo01.ogg" />
+    <Content Include="media\Ship_Lifebar.png" />
+    <Content Include="media\Ship_Sheet.png" />
+    <Content Include="media\Ship_Sheet_flame1.png" />
+    <Content Include="media\snap-view.png" />
+    <Content Include="media\snap-view.psd" />
+    <Content Include="media\SpaceStarsBG.png" />
+    <Content Include="media\SpaceTiles.png" />
+    <Content Include="media\Star_BG_Fat.png" />
+    <Content Include="media\Star_BG_Large.png" />
+    <Content Include="media\stat-matte.png" />
+    <Content Include="media\textures\entities.png" />
+    <Content Include="media\textures\entities.txt" />
+    <Content Include="media\textures\joystick-toggle.png" />
+    <Content Include="media\textures\nokia-24-white-shadow.png" />
+    <Content Include="media\textures\nokia-24-white-shadow.txt" />
+    <Content Include="media\textures\nokia-36-white-shadow.png" />
+    <Content Include="media\textures\nokia-36-white-shadow.txt" />
+    <Content Include="media\textures\screens.png" />
+    <Content Include="media\textures\screens.txt" />
+    <Content Include="media\textures\sheet.png" />
+    <Content Include="media\textures\sheet.xml" />
+    <Content Include="media\TransTextBG.png" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="SuperRawrType_StoreKey.pfx" />
+    <Content Include="weltmeister.html" />
+    <None Include="SuperRawrType_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
